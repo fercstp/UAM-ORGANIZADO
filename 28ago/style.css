@@ -1,0 +1,55 @@
+header {
+    background-color: #7be9c4;
+    /* height: 50vh; */
+}
+main {
+    background-color: #ddb9ff;
+    /* height: 100vh; */
+}
+aside {
+    background-color: hsla(25, 86%, 64%, 0.5);
+}
+footer {
+    background-color: #6a0101;
+    /* height: 30vh; */
+}
+.borde {
+    border-radius: 8px 8px 8px 8px;
+}
+p, h1 {
+    padding: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 1rem;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"
+    "principal principal lado"
+    "pie pie pie"
+    ;
+}
+header {
+    grid-area: cabeza;
+}
+main {
+    grid-area: principal;
+}
+aside {
+    grid-area: lado;
+}
+footer {
+    grid-area: pie;
+}
+
+/* Svg */
+svg {
+    width: 40%;
+}
+
+
+    

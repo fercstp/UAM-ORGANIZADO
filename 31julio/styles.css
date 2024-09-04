@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+/* Ejemplo de box model 
+article {
+    border-bottom: 10px #c80101 solid;
+    padding: 3rem 8rem;
+    margin: 2rem;
+}
+    */
+
+/* Ejemplos de id y class 
+.primer {
+    line-height: 3rem;
+    color: #6d13c1;
+}
+.parrafo {
+    line-height: 2.5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #da450f;
+}
+#lista {
+    list-style: none;
+    font-size: .6;
+    color: #70c1c4;
+    line-height: 1.4;
+}
+    */
+/* Reticula */
+
+body {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    gap: 1rem;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+main {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 1rem;
+
+}
+footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* Estilos menú de navegación */
+#logo {
+    width: 50px;
+}
+
+nav {
+    background-color: #ffa537;
+    padding: 1rem 3rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+nav ul a {
+    text-decoration: none;
+    padding: 2rem;
+    color: #ffffff;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Estilo footer */
+footer {
+    background-color: #ffa537;
+    padding: 3rem;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+/* Estilos tipograficos */
+h1 {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 4rem;
+    padding: 2rem 0;
+}
+.parrafo {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2;
+    line-height: 2rem;
+}
+.primer {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2;
+    line-height: 2rem;
+}
+figcaption {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: .8rem;
+}
+/* Estilos imagen */
+
+#imagenprincipal {
+    width: 100%;
+    object-fit: cover;
+}

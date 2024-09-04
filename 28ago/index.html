@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reputation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="head borde">
+            <p>Header</p>
+        </header>
+        <main class="main borde">
+            <h1>Álbum.</h1>
+            <p>Reputation es el sexto álbum de estudio de Taylor Swift, lanzado el 10 de noviembre de 2017. Este álbum marcó un cambio significativo en su estilo musical y lírico, siendo producido por Taylor Swift, Jack Antonoff, Max Martin y Shellback. Reputation es conocido por su enfoque en la reputación de Swift en medio de la intensa atención mediática y la controversia que la rodeaba. A través de sus letras, aborda temas como la venganza, la fama y el amor, reflejando su respuesta a la crítica y la percepción pública. Musicalmente, el álbum se caracteriza por su sonido electropop y elementos de trap y EDM, con una producción densa que incluye sintetizadores y ritmos programados.</p>
+            <div id="my-div"></div>
+        </main>
+        <aside class="lado borde">
+            <p>Aside</p>
+        </aside>
+        <footer class="pie borde">
+            <p>Footer</p>
+        </footer>
+    </div>
+    <script src="js/vivus.js"></script>
+    <script>
+      new Vivus('my-div', {duration: 100, type: 'oneByOne', file: 'img/trazo-2.svg'},);
+    </script>
+
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+        ScrollReveal().reveal('.head', { delay: 200, distance: '150%', origin: 'top'});
+        ScrollReveal().reveal('.main', { delay: 500, scale: 0.85 });
+        ScrollReveal().reveal('.lado', { delay: 1000, rotate: { x: 20, z: 20 }});
+        ScrollReveal().reveal('.pie', { delay: 1200, distance: '150%', origin: 'bottom', });
+    </script>
+</body>
+</html>

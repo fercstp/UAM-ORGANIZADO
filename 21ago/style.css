@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://unpkg.com/@uiw/reset.css@1.0.6/reset.css');
+
+.dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.inter-400 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 2rem;
+}
+p {
+    line-height: 1.6;
+}
+figcaption {
+    font-size: .8rem;
+}
+/* Columnas */
+
+.columnas {
+    columns: 3 400px;
+    column-gap: 1rem;
+}
+
+/* Imagen */
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.clip-me {
+    clip-path: polygon(17% 0, 81% 0, 100% 53%, 93% 100%, 0 100%, 0 52%);
+}
+.recortado {
+    float: left;
+    clip-path: circle(25% at 50% 50%);
+    shape-outside: circle(30%);
+    margin-left: -100px;
+}
+/* Margen del contenido principal */
+main {
+    margin: 0 1rem;
+}
